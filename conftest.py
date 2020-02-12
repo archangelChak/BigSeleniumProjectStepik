@@ -17,5 +17,5 @@ def browser(lang):
     options.add_experimental_option('prefs', {'intl.accept_languages': lang})
     browser = webdriver.Chrome(options=options)
     yield browser
-    time.sleep(5)
+    time.sleep(2)
     browser.quit()
